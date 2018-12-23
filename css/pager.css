@@ -1,0 +1,43 @@
+ul.pager {
+	border: 0px;
+	margin: 4px;
+	padding: 0px;
+	height: 22px;
+}
+
+.pager li{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 11px;
+	list-style: none;
+	display: inline-block;
+}
+.pager a{
+	border: solid 1px #dddddd;
+	margin-right: 2px;
+	background: #454545;
+}
+.pager .active{
+	font-weight: bold;
+	padding: 4px 6px;
+}
+.pager a:link, .pager a:visited {
+	color: #ffffff;
+	padding: 3px 6px;
+	text-decoration: none;
+}
+.pager a:hover{
+	color: #000000;
+	border: solid 1px #cccccc;
+	background: #f0f0f0;
+}
+.pager .next a, .pager .previous a {
+	display: inline-block;
+	width: 58px;
+	font-weight: bold;
+	border: 0px;
+	color: #000000;
+	background: transparent;
+	text-decoration: underline;
+}

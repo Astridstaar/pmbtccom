@@ -1,0 +1,41 @@
+#news a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+#news a:hover {
+	text-decoration: none;
+}
+#news .title a {
+	color: #fff2ce;
+	font-weight: bold;
+	text-decoration: none;
+}
+#news .important a {
+/*	text-shadow: 0px -1px 1px red;*/
+	color: #db4d1a;
+}
+#news .text {
+}
+#news .date {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 125px;
+	color: #808080;
+}
+#news .more {
+	display: inline-block;
+	overflow: hidden;
+}
+#news .summary {
+	color: #ffffff;
+	font-size: 1.2em;
+}
+#news .summary a {
+	font-size: 0.90em;
+	color: #bcbcbc;
+}
+#news .divider {
+	border-bottom: 1px solid #202020;
+	padding: 0px 0px 5px 0px;
+}

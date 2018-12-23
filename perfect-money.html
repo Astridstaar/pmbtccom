@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paysafecard: Exchange Paysafecard to Perfect Money | Buy Perfect Money Paysafecard | Where Buy Perfect Money | PM-BTC.COM</title>
+
+	<meta name="description" content="Paysafecard: Exchange Paysafecard to Perfect Money - Welcome to PM-BTC.COM! Buy Perfect Money with Paysafecard. Fast delivery, reliable, best rates. Buy Perfect Money | Convert Paysafecard To Perfect Money | Paysafecard To PM | Sell Paysafecard To Perfect Money" />
+	<meta name="keywords" content="paysafecard exchange to perfect money, exchange paysafecard to perfect money, sell paysafecard, change paysafecard to perfect money, exchange paysafecard to pm, convert paysafecard to perfect money, buy perfect money paysafecard, sell paysafecard to perfect money, transfer paysafecard to perfect money, buy perfect money, sell paysafecard voucher, where buy perfect money, perfect money exchanger"/>
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="cache-control" content="no-cache" />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/controls.css" />
+	<link rel="stylesheet" type="text/css" href="css/news.css" />
+	<link rel="stylesheet" type="text/css" href="css/feedback.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery/base/jquery-ui.min.css" />
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+
+	<script type="text/javascript" src="js/jquery/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/ui/jquery.ui.core.min.js"></script>
+	<script type="text/javascript" src="js/jquery/ui/jquery.ui.widget.min.js"></script>
+	<script type="text/javascript" src="js/jquery/ui/jquery.ui.position.min.js"></script>
+	<script type="text/javascript" src="js/jquery/ui/jquery.ui.tooltip.min.js"></script>
+	<script type="text/javascript" src="js/jquery/ui/jquery.ui.effect.min.js"></script>
+	<script type="text/javascript" src="js/jquery/ui/jquery.ui.effect-blind.min.js"></script>
+	<script type="text/javascript">
+		(function() {
+			window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");$.src="https://v2.zopim.com/?4ano7pZyJFhZ7MTm6HpWEoLHuOYblOZ0";z.t=+new Date;$.type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+		})();
+
+		$(document).ready(function(){
+			$('#icq').html('62455' + '1969');
+			$('#skype').html('S6245' + '51969');
+			$( document ).tooltip();
+		});
+
+		$zopim(function() {
+			$zopim.livechat.setLanguage('en');
+		});
+	</script>
+	<style>.ui-tooltip {
+			font-size: 80%;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<h1><a href="index.html">pm-btc.com</a></h1>
+			<em>
+				You can buy Perfect Money and Bitcoin here. <a href="perfect-money.html">Convert Paysafecard to Perfect Money</a> | <a href="bitcoin.html">Paysafecard to Bitcoin</a>.
+			</em>
+			<ul>
+
+				<li ><a href="bitcoin.html" title="Exchange Paysafecard to Bitcoin">Bitcoin</a></li>
+				<!--li ><a href="/litecoin" title="Exchange Paysafecard to Litecoin">Litecoin</a></li-->
+				<li class="selected"><a href="perfect-money.html" title="Exchange Paysafecard to Perfect Money">Perfect Money</a></li>
+				<li ><a href="contact.html">Contact us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="page">
+		<div class="column" id="leftcol">
+			<div class="container">
+
+				
+<h3><a href="news.html">Our News</a></h3>
+<div class="sb-block" id="news">
+	
+	<div class="title important"><a href="news/1.html">Welcome to our new service!</a></div>
+	<div class="text">Welcome to our new service! Here you can easily and fast exchangeyour Paysafecard voucher to PerfectMoney and Bitcoin.If you have any questions feel free to contact us though online chat, email, ICQ...</div>
+	<div class="divider">
+		<div class="date">6 Mar 17 13:05</div>
+		<a href="news/1.html" class="more">Read more</a>
+	</div>
+	
+	<div class="summary">
+		1 of 1 records
+		<div style="float:right"><a href="news.html">see all</a></div>
+	</div>
+</div>
+
+			</div>
+		</div>
+		<div class="column" id="content">
+			<div class="support">
+				Online support:
+				<span>
+					ICQ: <span id="icq"></span> <img src="images/icq/online.gif" width="16" height="16" />
+					<br/>
+					SKYPE: <span id="skype"></span>
+					<img src="images/skype/online.png" width="16" height="16" />
+				</span>
+			</div>
+			
+<script src="js/form.js" type="text/javascript"></script>
+<script>
+	function sourceChanged()
+	{
+		if($("#source").val() != "PSE")
+		{
+			var opt = $("#country option[cur='"+$("#source").val()+"']");
+			if(opt.length)
+			{
+				$("#country").val(opt.val());
+			}
+			else
+			{
+				$("#country").val("")
+			}
+		}
+		else
+		{
+			$("#country").val("")
+		}
+		setRate();
+	}
+
+	function fixSourceCode()
+	{
+		var cur = $("#country option:selected").attr("cur");
+		if(! cur)
+		{
+			cur = "PSE";
+		}
+		if(cur in REM_CURRENCIES)
+		{
+			$('#source option:contains("'+REM_CURRENCIES[cur]+'")').attr("value", cur);
+		}
+		return cur;
+	}
+
+	function fixNS()
+	{
+		var ns = +$("#country option:selected").attr("ns");
+
+		$("#noscan").parent().css("visibility", (ns)?"hidden":"visible");
+		switch(ns)
+		{
+			case 1:
+				$("#noscan").prop("checked", true);
+				break;
+			case 0:
+			case 2:
+				$("#noscan").prop("checked", false);
+				break;
+		}
+	}
+
+	function countryChanged()
+	{
+		fixNS();
+		$("#source").val(fixSourceCode());
+		setRate();
+	}
+
+	function setRate()
+	{
+		var noscan = ($("#noscan").prop("checked"))?'1':'0';
+		ajax_Post(
+			"/iface.php?req=get_rate",
+			"source=" + $("#source").val() + "&target=PMZ&amount=" + $("#value").val() + "&country=" + $("#country").val() + "&noscan=" + noscan,
+			function( xml ) {
+				$('#rate').html("1 " + $("#source option:selected").text() + " = " + $("rate:first", xml).attr("value") + " usd");
+				setPayoff();
+			}
+		);
+	}
+
+	function setPayoff()
+	{
+		var value = $("#value").val();
+		var noscan = ($("#noscan").prop("checked"))?'1':'0';
+		if(value > 0)
+		{
+			ajax_Post(
+				"/iface.php?req=get_payoff",
+				"source=" + $("#source").val() + "&target=PMZ&amount=" + value + "&country=" + $("#country").val() + "&noscan=" + noscan,
+				function( xml ) {
+					$("#payoff").text( $("payoff:first", xml).attr("value") + " USD equivalent" );
+				}
+			);
+		}
+		else
+		{
+			$("#payoff").text( "0 USD equivalent" );
+		}
+	}
+
+	function check()
+	{
+		if($("#country").val() == "")
+		{
+			$("#country").focus().css("border", "1px solid #DB4D1A");
+			alert("Please select country where you bought this voucher.");
+			return false;
+		}
+		else
+		{
+			$("#country").css("border", "none");
+		}
+		return true;
+	}
+
+	function submit()
+	{
+		if(check())
+		{
+			document.forms['data_form'].submit();
+		}
+	}
+
+	$(function() {
+	
+
+		fixNS();
+
+		REM_CURRENCIES = {};
+		var currencies = {};
+		$("#source option").each(function(){
+			var cur = $(this).text(), code = $(this).attr("value");
+			if(! currencies[cur])
+			{
+				currencies[cur] = code;
+			}
+			else
+			{
+				REM_CURRENCIES[code] = cur;
+				REM_CURRENCIES[currencies[cur]] = cur;
+				$(this).remove();
+			}
+		});
+		fixSourceCode();
+
+		$( '#voucher' ).focus();
+	});
+</script>
+<style>#payoff {
+	float: left;
+	font-weight: bold;
+	font-size: 90%;
+	padding: 2px;
+}
+#scr_msg {
+	background-color: #FFE74F;
+	border-radius: 5px;
+	border: 1px solid #C8C8C8;
+	font-weight: bold;
+	text-align: center;
+	margin: 4px 0px 4px 0px;
+	padding: 4px 26px 4px 26px;
+
+	-webkit-box-shadow: 0px 0px 5px #222;
+	-moz-box-shadow: 0px 0px 5px #222;
+	-ms-box-shadow: 0px 0px 5px #222;
+	-o-box-shadow: 0px 0px 5px #222;
+	box-shadow: 0px 0px 5px #222;
+	display: none;
+}
+#scr_msg p {
+	padding: 7px 0px 0px 0px;
+}
+#voucher{
+	width: 214px;
+}
+#value{
+	width: 94px;
+}
+</style>
+<div class="section">
+	<strong>Exchange Paysafecard to PM</strong><em>rate:<span id="rate">Ask Support </span></em>
+	<form name="data_form" action="perfect-money.html" method="POST">
+		<input type="hidden" name="action" value="submit"/>
+		<div align="center">
+			
+			
+			
+			
+			<table width="480">
+				<tr>
+					<th><label for="voucher">Voucher code:</label></th>
+					<th><label for="value">Value:</label></th>
+					<th><label for="country">Country:</label></th>
+					<th><label for="source">Currency:</label></th>
+				</tr>
+				<tr>
+					<td><input type="text" id="voucher" name="voucher" value="" placeholder="16 digits" size="32" required="required" autofocus="autofocus" title="Please note that you may be asked to provide scanned or photo copy of your voucher" /></td>
+					<td><input type="text" min="0" id="value" name="value" value="" size="12" required="required" onkeyup="setRate();" /></td>
+					<td>
+						<select id="country" name="country" onchange="countryChanged()">
+							<option value="" ns="0"></option>
+	
+							<option value="AT" cur="PSE" ns="2" >Austria</option>
+	
+							<option value="BE" cur="PSE" ns="2" >Belgium</option>
+	
+							<option value="HR" cur="PSE" ns="2" >Croatia</option>
+	
+							<option value="CY" cur="PSE" ns="2" >Cyprus</option>
+	
+							<option value="CZ" cur="PSE" ns="2" >Czech Republic</option>
+	
+							<option value="FI" cur="PSE" ns="2" >Finland</option>
+	
+							<option value="FR" cur="PSE" ns="2" >France</option>
+	
+							<option value="DE" cur="PSD" ns="2" >Germany</option>
+	
+							<option value="IR" cur="PSE" ns="2" >Ireland</option>
+	
+							<option value="LU" cur="PSE" ns="0" >Luxembourg</option>
+	
+							<option value="NL" cur="PSE" ns="2" >Netherlands</option>
+	
+							<option value="PL" cur="PSE" ns="2" >Poland</option>
+	
+							<option value="PT" cur="PSE" ns="2" >Portugal</option>
+	
+							<option value="RO" cur="PSE" ns="2" >Romania</option>
+	
+							<option value="ES" cur="PSE" ns="2" >Spain</option>
+	
+							<option value="SE" cur="PSE" ns="0" >Sweden</option>
+	
+							<option value="CH" cur="PSE" ns="2" >Switzerland</option>
+	
+							<option value="UK" cur="PSG" ns="2" >United Kingdom</option>
+	
+						</select>
+					</td>
+					<td>
+						<select id="source" name="source" onchange="sourceChanged()">
+	
+							<option value="PSE" >EUR</option>
+	
+							<option value="PSD" >EUR</option>
+	
+							<option value="PSG" >GBP</option>
+	
+						</select>
+					</td>
+				</tr>
+			</table>
+			<table width="480" align="center" cellpadding="0" cellspacing="8">
+				<tr>
+					<td colspan="2" class="underline"></td>
+				</tr>
+				<tr>
+					<th width="150"><label for="target">Exchange to:</label></th>
+					<td>
+						<select id="target" name="target" class="fw" onchange="setRate();">
+							<option value="PMZ" >Perfect Money USD</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th><label for="account">PM Account:</label></th>
+					<td><input type="text" id="account" name="account" value="" required="required" class="fw" /></td>
+				</tr>
+				<tr>
+					<th><label for="email">E-mail:</label></th>
+					<td><input type="email" id="email" name="email" value="" required="required" placeholder="Order status updates will be sent here" class="fw"/></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label class="small" title="In case you can not provide scanned copy of your voucher, then it may be processed with lower rate"><input id="noscan" type="checkbox" name="noscan"  onchange="setRate()" /> Process without scanned copy</label>
+					</td>
+				</tr>
+				<tr>
+					<th>You receive:</th>
+					<td>
+						<div id="payoff">Ask Support</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label class="small"><input type="checkbox" name="rememberme"  /> Remember my E-mail and Account</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="underline"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center" id="submit-area">
+	
+						<span class="button" onclick="submit()">
+							<span class="button-symbol">&nbsp;</span>
+							<span class="button-text">Exchange</span>
+						</span>
+	
+					</td>
+				</tr>
+			</table>
+		</div>
+	</form>
+</div>
+<script>setRate();</script>
+
+			<h3>Conditions</h3>
+<div class="sb-block">
+<ol>
+	<li>Our exchange rate depends on exchange sum. The more you exchange the more you get. You can see exact sum you will get when you fill in all fields;</li>
+	<li>We do not have any additional comissions, so you will get exactly same amount as you see in the form;</li>
+	<li>After you submit your exchange request and we process it, we will send money to the account that you enter in exchange request;</li>
+	<li>In rare cases, we reserve the right to refuse an exchange.</li>
+</ol>
+</div>
+
+		</div>
+		<div class="column" id="rightcol">
+			<div class="container">
+				
+<h3><a href="feedback.html">Customer Feedback</a></h3>
+<div id="feedback">
+	
+	<div class="author">Smme</div>
+	<div class="date">2 Jan 17 9:06</div>
+	<div class="text">Great store. First I was worried it was a scam but this site is real.</div>
+	
+	<div class="author">Happy</div>
+	<div class="date">6 Dec 16 9:40</div>
+	<div class="text">very good rate & fast services...........</div>
+	
+	<div class="author">xxx</div>
+	<div class="date">23 Nov 16 9:23</div>
+	<div class="text">goood work</div>
+	
+	<div class="author">Unixserv</div>
+	<div class="date">26 Sep 16 9:11</div>
+	<div class="text">This site is the Best . Good Support and 100% Working , Good Rates . . I come back to Exchange . Best Regards , Unixserv</div>
+	
+	<div class="summary">
+		4 of 10 records
+		<div style="float:right"><a href="feedback.html">see all</a></div>
+	</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<em>pm-btc.com 2018</em>
+	
+		</div>
+	</div>
+</body>
+</html>
